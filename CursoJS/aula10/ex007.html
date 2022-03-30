@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 18px Arial;
+        }
+
+        h1 {
+            background-color: blue;
+            color: white;
+            width: 350px;
+            text-align: center;
+        }
+
+        input {
+            font: normal 18px Arial;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: yellow;
+        }
+
+        input.somar {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+
+        div#res {
+            background-color: blue;
+            padding: 10px;
+            font: normal 20px Arial;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="pnumero" id="pnumero"> +
+    <input type="number" name="snumero" id="snumero">
+    <input type="button" value="Somar" onclick="somar()" class="somar">
+    <div id="res">Resultado</div>
+    <script src="script.js"></script>
+</body>
+</html>

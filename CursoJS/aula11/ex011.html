@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajem</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Em que país você mora? <input type="string" name="txtpais" id="txtpais">
+    <input type="button" value="Clicar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var país = String(txtp.value)
+            res.innerHTML = `<p>Vivendo em <strong>${país}!</strong></p>`
+            if (país != 'Brasil') {
+                res.innerHTML += `Você é Estrangeiro!`
+            } else {
+                res.innerHTML += `Você é Brasileiro!`
+            }
+        }
+    </script>
+</body>
+</html>
