@@ -6,7 +6,7 @@ function tabuada(){
         alert('[ERRO], digite um número')
     } else {
         let n = Number(num.value)
-        tab.innerHTML = ''
+        tab.innerHTML = '';
         for(let t = 1; t <= 10; t++){
            let item = document.createElement('option')
 
