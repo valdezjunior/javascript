@@ -19,6 +19,10 @@ section {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.37);
 }
 
+.limpar {
+    padding-top: 6px;
+}
+
 
 footer {
     padding: 10px;
